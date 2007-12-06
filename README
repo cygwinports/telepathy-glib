@@ -4,8 +4,8 @@ Glib library for Telepathy connection managers
 
 Runtime requirements:
   cygwin-1.5.24-2
-  glib2-2.12.12-1
-  libdbus-glib_1_2-0.73-1
+  glib2-2.14.4-1
+  libdbus-glib_1_2-0.74-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -13,13 +13,13 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.11-1
-  dbus-glib-0.73-1
+  cygport-0.3.7-1
+  dbus-glib-0.74-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  gtk-doc-1.7-1
+  gtk-doc-1.9-1
   libtool1.5-1.5.23a-2
-  libxslt-1.1.20-1
+  libxslt-1.1.22-1
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -50,35 +50,22 @@ Files included in the binary packages:
 
 (telepathy-glib)
   /usr/bin/cygtelepathy-glib-0.dll
-  /usr/share/doc/Cygwin/telepathy-glib-0.5.13.README
-  /usr/share/doc/telepathy-glib-0.5.13/AUTHORS
-  /usr/share/doc/telepathy-glib-0.5.13/COPYING
-  /usr/share/doc/telepathy-glib-0.5.13/ChangeLog
-  /usr/share/doc/telepathy-glib-0.5.13/INSTALL
+  /usr/share/doc/Cygwin/telepathy-glib-0.7.0.README
+  /usr/share/doc/telepathy-glib-0.7.0/AUTHORS
+  /usr/share/doc/telepathy-glib-0.7.0/COPYING
+  /usr/share/doc/telepathy-glib-0.7.0/ChangeLog
+  /usr/share/doc/telepathy-glib-0.7.0/INSTALL
 
 (telepathy-glib-devel)
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel_Interface_Chat_State.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel_Interface_DTMF.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel_Interface_Group.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel_Interface_Media_Signalling.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel_Interface_Password.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel_Type_Contact_List.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel_Type_Room_List.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel_Type_Streamed_Media.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Channel_Type_Text.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Connection.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Connection_Interface_Aliasing.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Connection_Interface_Avatars.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Connection_Interface_Capabilities.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Connection_Interface_Presence.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Connection_Manager.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Media_Session_Handler.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Media_Stream_Handler.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/svc-Properties_Interface.h
+  /usr/include/telepathy-1.0/telepathy-glib/_gen/gtypes.h
   /usr/include/telepathy-1.0/telepathy-glib/_gen/telepathy-enums.h
   /usr/include/telepathy-1.0/telepathy-glib/_gen/telepathy-errors.h
   /usr/include/telepathy-1.0/telepathy-glib/_gen/telepathy-interfaces.h
+  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-channel-interfaces.h
+  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-connection-interfaces.h
+  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-connection-manager-interfaces.h
+  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-generic-interfaces.h
+  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-media-interfaces.h
   /usr/include/telepathy-1.0/telepathy-glib/base-connection-manager.h
   /usr/include/telepathy-1.0/telepathy-glib/base-connection.h
   /usr/include/telepathy-1.0/telepathy-glib/channel-factory-iface.h
@@ -86,9 +73,11 @@ Files included in the binary packages:
   /usr/include/telepathy-1.0/telepathy-glib/dbus.h
   /usr/include/telepathy-1.0/telepathy-glib/debug-ansi.h
   /usr/include/telepathy-1.0/telepathy-glib/debug.h
+  /usr/include/telepathy-1.0/telepathy-glib/defs.h
   /usr/include/telepathy-1.0/telepathy-glib/enums.h
   /usr/include/telepathy-1.0/telepathy-glib/errors.h
   /usr/include/telepathy-1.0/telepathy-glib/group-mixin.h
+  /usr/include/telepathy-1.0/telepathy-glib/gtypes.h
   /usr/include/telepathy-1.0/telepathy-glib/handle-repo-dynamic.h
   /usr/include/telepathy-1.0/telepathy-glib/handle-repo-static.h
   /usr/include/telepathy-1.0/telepathy-glib/handle-repo.h
@@ -102,28 +91,14 @@ Files included in the binary packages:
   /usr/include/telepathy-1.0/telepathy-glib/svc-channel.h
   /usr/include/telepathy-1.0/telepathy-glib/svc-connection-manager.h
   /usr/include/telepathy-1.0/telepathy-glib/svc-connection.h
+  /usr/include/telepathy-1.0/telepathy-glib/svc-generic.h
   /usr/include/telepathy-1.0/telepathy-glib/svc-media-interfaces.h
   /usr/include/telepathy-1.0/telepathy-glib/svc-properties-interface.h
   /usr/include/telepathy-1.0/telepathy-glib/text-mixin.h
   /usr/include/telepathy-1.0/telepathy-glib/util.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/svc-Channel_Interface_Hold.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/svc-Channel_Interface_Transfer.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/svc-Channel_Type_Contact_Search.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/svc-Channel_Type_Tubes.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/svc-Connection_Interface_Contact_Info.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/svc-Connection_Interface_Forwarding.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/svc-Connection_Interface_Privacy.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/svc-Connection_Interface_Renaming.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/unstable-enums.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/unstable-interfaces.h
-  /usr/include/telepathy-unstable/telepathy-glib/_gen/unstable-svc.h
-  /usr/include/telepathy-unstable/telepathy-glib/svc-unstable.h
-  /usr/lib/libtelepathy-glib-unstable.a
-  /usr/lib/libtelepathy-glib-unstable.la
   /usr/lib/libtelepathy-glib.a
   /usr/lib/libtelepathy-glib.dll.a
   /usr/lib/libtelepathy-glib.la
-  /usr/lib/pkgconfig/telepathy-glib-unstable.pc
   /usr/lib/pkgconfig/telepathy-glib.pc
   /usr/share/gtk-doc/html/telepathy-glib/TpBaseConnection.html
   /usr/share/gtk-doc/html/telepathy-glib/TpBaseConnectionManager.html
@@ -140,6 +115,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/telepathy-glib/left.png
   /usr/share/gtk-doc/html/telepathy-glib/right.png
   /usr/share/gtk-doc/html/telepathy-glib/style.css
+  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-Miscellaneous-definitions.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpChannelFactoryIface.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpChannelIface.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpGroupMixin.html
@@ -153,6 +129,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-debug.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-enums.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-errors.html
+  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-gtypes.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-handle-repo.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-handle.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-interfaces.html
@@ -160,9 +137,8 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-channel.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-connection-manager.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-connection.html
+  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-generic.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-media-interfaces.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-properties-interface.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-unstable.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-util.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib.devhelp

@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: cygwin glib2-devel libdbus-glib_1-devel
+requires: cygwin telepathy-glib glib2-devel libdbus-glib_1-devel
 external-source: telepathy-glib
 sdesc: "Telepathy connection manager library (development)"
 ldesc: "Glib library for Telepathy connection managers"
