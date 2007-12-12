@@ -33,16 +33,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack telepathy-glib-0.5.13-X-src.tar.bz2
+  unpack telepathy-glib-0.7.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./telepathy-glib-0.5.13-X.cygport all
+  cygport ./telepathy-glib-0.7.0-X.cygport all
 
 This will create:
-  /usr/src/telepathy-glib-0.5.13-X-src.tar.bz2
-  /usr/src/telepathy-glib-0.5.13-X.tar.bz2
-  /usr/src/telepathy-glib-devel-0.5.13-X.tar.bz2
+  /usr/src/telepathy-glib-0.7.0-X-src.tar.bz2
+  /usr/src/telepathy-glib-0.7.0-X.tar.bz2
+  /usr/src/telepathy-glib-devel-0.7.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -148,6 +148,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.7.0-1 -----
+Version bump.
 
 ----- version 0.5.13-1 -----
 Initial release for Cygwin.
