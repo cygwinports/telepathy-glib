@@ -6,7 +6,7 @@ Runtime requirements:
   cygwin-1.5.25-15
   glib2-2.16.3-1
   libdbus1_3-1.2.1-1
-  libdbus-glib_1_2-0.74-1
+  libdbus-glib_1_2-0.76-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -20,9 +20,9 @@ Build requirements:
   gnome-common-2.20.0-2
   gtk-doc-1.10-1
   libtool-2.2.2-2
-  libxslt-1.1.23-1
   make-3.81-1
   pkg-config-0.23a-2
+  python-2.5.2-3
   sed-4.1.5-2
 
 Canonical website:
@@ -34,17 +34,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack telepathy-glib-0.7.10-X-src.tar.bz2
+  unpack telepathy-glib-0.7.14-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./telepathy-glib-0.7.10-X.cygport all
+  cygport ./telepathy-glib-0.7.14-X.cygport all
 
 This will create:
-  /usr/src/libtelepathy-glib-devel-0.7.10-X.tar.bz2
-  /usr/src/libtelepathy-glib0-0.7.10-X.tar.bz2
-  /usr/src/telepathy-glib-0.7.10-X-src.tar.bz2
-  /usr/src/telepathy-glib-0.7.10-X.tar.bz2
+  /usr/src/libtelepathy-glib-devel-0.7.14-X.tar.bz2
+  /usr/src/libtelepathy-glib0-0.7.14-X.tar.bz2
+  /usr/src/telepathy-glib-0.7.14-X-src.tar.bz2
+  /usr/src/telepathy-glib-0.7.14-X.tar.bz2
 
 -------------------------------------------
 
@@ -52,12 +52,12 @@ Files included in the binary packages:
 
 (libtelepathy-glib0)
   /usr/bin/cygtelepathy-glib-0.dll
-  /usr/share/doc/telepathy-glib-0.7.10/AUTHORS
-  /usr/share/doc/telepathy-glib-0.7.10/COPYING
-  /usr/share/doc/telepathy-glib-0.7.10/ChangeLog
-  /usr/share/doc/telepathy-glib-0.7.10/INSTALL
-  /usr/share/doc/telepathy-glib-0.7.10/NEWS
-  /usr/share/doc/telepathy-glib-0.7.10/README
+  /usr/share/doc/telepathy-glib-0.7.14/AUTHORS
+  /usr/share/doc/telepathy-glib-0.7.14/COPYING
+  /usr/share/doc/telepathy-glib-0.7.14/ChangeLog
+  /usr/share/doc/telepathy-glib-0.7.14/INSTALL
+  /usr/share/doc/telepathy-glib-0.7.14/NEWS
+  /usr/share/doc/telepathy-glib-0.7.14/README
 
 (libtelepathy-glib-devel)
   /usr/include/telepathy-1.0/telepathy-glib/_gen/gtypes.h
@@ -84,6 +84,7 @@ Files included in the binary packages:
   /usr/include/telepathy-1.0/telepathy-glib/channel.h
   /usr/include/telepathy-1.0/telepathy-glib/connection-manager.h
   /usr/include/telepathy-1.0/telepathy-glib/connection.h
+  /usr/include/telepathy-1.0/telepathy-glib/contacts-mixin.h
   /usr/include/telepathy-1.0/telepathy-glib/dbus-properties-mixin.h
   /usr/include/telepathy-1.0/telepathy-glib/dbus.h
   /usr/include/telepathy-1.0/telepathy-glib/debug-ansi.h
@@ -136,12 +137,14 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/telepathy-glib/right.png
   /usr/share/gtk-doc/html/telepathy-glib/style.css
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpChannelFactoryIface.html
+  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpContactsMixin.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpGroupMixin.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpHeap.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpIntSet.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpPresenceMixin.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpPropertiesMixin.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpTextMixin.html
+  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-asv.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel-group.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel-media.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel-roomlist.html
@@ -151,8 +154,10 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-aliasing.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-avatars.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-caps.html
+  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-contacts.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-manager.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-presence.html
+  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-simple-presence.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-dbus-properties-mixin.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-dbus.html
@@ -191,6 +196,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.7.14-1 -----
+Version bump.
 
 ----- version 0.7.10-1 -----
 Version bump.
