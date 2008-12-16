@@ -1,4 +1,3 @@
-category: _source
-requires: libtelepathy-glib0
+category: Gnome Net
 sdesc: "Telepathy connection manager library (source)"
 ldesc: "Glib library for Telepathy connection managers"

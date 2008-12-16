@@ -4,25 +4,24 @@ Glib library for Telepathy connection managers
 
 Runtime requirements:
   cygwin-1.5.25-15
-  glib2-2.16.3-1
-  libdbus1_3-1.2.1-1
   libdbus-glib_1_2-0.76-1
+  libdbus1_3-1.2.4-1
+  libglib2.0_0-2.18.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.8-1.8.5-3
-  binutils-20060817-1
-  cygport-0.3.11-1
-  dbus-glib-0.74-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gnome-common-2.20.0-2
-  gtk-doc-1.10-1
-  libtool-2.2.2-2
+  gnome-common-2.24.0-1
+  gtk-doc-1.11-1
+  libtool-2.2.6a-1
   make-3.81-1
   pkg-config-0.23a-2
-  python-2.5.2-3
+  python-2.5.2-4
   sed-4.1.5-2
 
 Canonical website:
@@ -34,17 +33,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack telepathy-glib-0.7.14-X-src.tar.bz2
+  unpack telepathy-glib-0.7.20-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./telepathy-glib-0.7.14-X.cygport all
+  cygport ./telepathy-glib-0.7.20-X.cygport all
 
 This will create:
-  /usr/src/libtelepathy-glib-devel-0.7.14-X.tar.bz2
-  /usr/src/libtelepathy-glib0-0.7.14-X.tar.bz2
-  /usr/src/telepathy-glib-0.7.14-X-src.tar.bz2
-  /usr/src/telepathy-glib-0.7.14-X.tar.bz2
+  /usr/src/libtelepathy-glib-devel-0.7.20-X.tar.bz2
+  /usr/src/libtelepathy-glib0-0.7.20-X.tar.bz2
+  /usr/src/telepathy-glib-0.7.20-X-src.tar.bz2
 
 -------------------------------------------
 
@@ -52,12 +50,12 @@ Files included in the binary packages:
 
 (libtelepathy-glib0)
   /usr/bin/cygtelepathy-glib-0.dll
-  /usr/share/doc/telepathy-glib-0.7.14/AUTHORS
-  /usr/share/doc/telepathy-glib-0.7.14/COPYING
-  /usr/share/doc/telepathy-glib-0.7.14/ChangeLog
-  /usr/share/doc/telepathy-glib-0.7.14/INSTALL
-  /usr/share/doc/telepathy-glib-0.7.14/NEWS
-  /usr/share/doc/telepathy-glib-0.7.14/README
+  /usr/share/doc/telepathy-glib-0.7.20/AUTHORS
+  /usr/share/doc/telepathy-glib-0.7.20/COPYING
+  /usr/share/doc/telepathy-glib-0.7.20/ChangeLog
+  /usr/share/doc/telepathy-glib-0.7.20/INSTALL
+  /usr/share/doc/telepathy-glib-0.7.20/NEWS
+  /usr/share/doc/telepathy-glib-0.7.20/README
 
 (libtelepathy-glib-devel)
   /usr/include/telepathy-1.0/telepathy-glib/_gen/gtypes.h
@@ -81,9 +79,11 @@ Files included in the binary packages:
   /usr/include/telepathy-1.0/telepathy-glib/base-connection.h
   /usr/include/telepathy-1.0/telepathy-glib/channel-factory-iface.h
   /usr/include/telepathy-1.0/telepathy-glib/channel-iface.h
+  /usr/include/telepathy-1.0/telepathy-glib/channel-manager.h
   /usr/include/telepathy-1.0/telepathy-glib/channel.h
   /usr/include/telepathy-1.0/telepathy-glib/connection-manager.h
   /usr/include/telepathy-1.0/telepathy-glib/connection.h
+  /usr/include/telepathy-1.0/telepathy-glib/contact.h
   /usr/include/telepathy-1.0/telepathy-glib/contacts-mixin.h
   /usr/include/telepathy-1.0/telepathy-glib/dbus-properties-mixin.h
   /usr/include/telepathy-1.0/telepathy-glib/dbus.h
@@ -92,6 +92,7 @@ Files included in the binary packages:
   /usr/include/telepathy-1.0/telepathy-glib/defs.h
   /usr/include/telepathy-1.0/telepathy-glib/enums.h
   /usr/include/telepathy-1.0/telepathy-glib/errors.h
+  /usr/include/telepathy-1.0/telepathy-glib/exportable-channel.h
   /usr/include/telepathy-1.0/telepathy-glib/group-mixin.h
   /usr/include/telepathy-1.0/telepathy-glib/gtypes.h
   /usr/include/telepathy-1.0/telepathy-glib/handle-repo-dynamic.h
@@ -120,8 +121,11 @@ Files included in the binary packages:
   /usr/lib/pkgconfig/telepathy-glib.pc
   /usr/share/gtk-doc/html/telepathy-glib/TpBaseConnection.html
   /usr/share/gtk-doc/html/telepathy-glib/TpBaseConnectionManager.html
+  /usr/share/gtk-doc/html/telepathy-glib/TpChannelFactoryIface.html
   /usr/share/gtk-doc/html/telepathy-glib/TpChannelIface.html
+  /usr/share/gtk-doc/html/telepathy-glib/TpChannelManager.html
   /usr/share/gtk-doc/html/telepathy-glib/TpDynamicHandleRepo.html
+  /usr/share/gtk-doc/html/telepathy-glib/TpExportableChannel.html
   /usr/share/gtk-doc/html/telepathy-glib/TpStaticHandleRepo.html
   /usr/share/gtk-doc/html/telepathy-glib/ch-client.html
   /usr/share/gtk-doc/html/telepathy-glib/ch-dbus.html
@@ -136,7 +140,6 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/telepathy-glib/left.png
   /usr/share/gtk-doc/html/telepathy-glib/right.png
   /usr/share/gtk-doc/html/telepathy-glib/style.css
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpChannelFactoryIface.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpContactsMixin.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpGroupMixin.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpHeap.html
@@ -157,8 +160,10 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-contacts.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-manager.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-presence.html
+  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-requests.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-simple-presence.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection.html
+  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-contact.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-dbus-properties-mixin.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-dbus.html
   /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-debug-ansi.html
@@ -196,6 +201,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.7.20-1 -----
+Version bump.
 
 ----- version 0.7.14-1 -----
 Version bump.

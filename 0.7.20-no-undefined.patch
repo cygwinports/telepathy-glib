@@ -22,3 +22,16 @@
  check_c_sources = *.c
  include $(top_srcdir)/tools/check-coding-style.mk
  check-local: check-coding-style
+--- origsrc/telepathy-glib-0.7.20/tests/dbus/Makefile.am	2008-12-14 11:36:28.000000000 -0600
++++ src/telepathy-glib-0.7.20/tests/dbus/Makefile.am	2008-12-15 22:21:58.134500000 -0600
+@@ -22,8 +22,8 @@
+ TESTS = $(noinst_PROGRAMS)
+ 
+ LDADD = \
+-    $(top_builddir)/telepathy-glib/libtelepathy-glib.la \
+-    $(top_builddir)/tests/lib/libtp-glib-tests.la
++    $(top_builddir)/tests/lib/libtp-glib-tests.la \
++    $(top_builddir)/telepathy-glib/libtelepathy-glib.la
+ 
+ test_channel_introspect_SOURCES = channel-introspect.c
+ 
