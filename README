@@ -3,25 +3,25 @@ telepathy-glib
 Glib library for Telepathy connection managers
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-48
   libdbus-glib_1_2-0.80-10
-  libdbus1_3-1.2.12-10
+  libdbus1_3-1.2.14-1
   libgcc1-4.3.2-2
-  libglib2.0_0-2.20.0-1
+  libglib2.0_0-2.20.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
   cygport-0.9.6-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
+  gnome-common-2.26.0-2
   gtk-doc-1.11-2
-  libtool-2.2.7a-11
+  libtool-2.2.7a-12
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   python-2.5.4-10
   sed-4.1.5-2
 
@@ -34,16 +34,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack telepathy-glib-0.7.28-X-src.tar.bz2
+  unpack telepathy-glib-0.7.31-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./telepathy-glib-0.7.28-X.cygport all
+  cygport ./telepathy-glib-0.7.31-X.cygport all
 
 This will create:
-  /usr/src/libtelepathy-glib-devel-0.7.28-X.tar.bz2
-  /usr/src/libtelepathy-glib0-0.7.28-X.tar.bz2
-  /usr/src/telepathy-glib-0.7.28-X-src.tar.bz2
+  /usr/src/libtelepathy-glib-devel-0.7.31-X.tar.bz2
+  /usr/src/libtelepathy-glib0-0.7.31-X.tar.bz2
+  /usr/src/telepathy-glib-0.7.31-X-src.tar.bz2
 
 -------------------------------------------
 
@@ -204,6 +204,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.7.31-1 -----
+Version bump.
 
 ----- version 0.7.28-1 -----
 Initial release for Cygwin 1.7.
