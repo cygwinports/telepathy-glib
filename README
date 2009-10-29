@@ -3,23 +3,23 @@ telepathy-glib
 Glib library for Telepathy connection managers
 
 Runtime requirements:
-  cygwin-1.7.0-50
+  cygwin-1.7.0-62
   libdbus-glib_1_2-0.80-10
-  libdbus1_3-1.2.14-1
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.3-1
+  libdbus1_3-1.2.16-1
+  libgcc1-4.3.4-1
+  libglib2.0_0-2.22.2-1
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  binutils-20080624-2
-  cygport-0.9.7-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gnome-common-2.26.0-2
+  automake1.11-1.11-10
+  binutils-2.19.51-1
+  cygport-0.9.10-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-1
+  gnome-common-2.28.0-1
   gtk-doc-1.11-2
-  libtool-2.2.7a-13
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   python-2.5.4-10
@@ -34,176 +34,23 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack telepathy-glib-0.7.32-X-src.tar.bz2
+  unpack telepathy-glib-0.8.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./telepathy-glib-0.7.32-X.cygport all
+  cygport ./telepathy-glib-0.8.1-X.cygport all
 
 This will create:
-  /usr/src/libtelepathy-glib-devel-0.7.32-X.tar.bz2
-  /usr/src/libtelepathy-glib0-0.7.32-X.tar.bz2
-  /usr/src/telepathy-glib-0.7.32-X-src.tar.bz2
+  /usr/src/libtelepathy-glib-devel-0.8.1-X.tar.bz2
+  /usr/src/libtelepathy-glib0-0.8.1-X.tar.bz2
+  /usr/src/telepathy-glib-0.8.1-X-src.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(libtelepathy-glib0)
-  /usr/bin/cygtelepathy-glib-0.dll
-  /usr/share/doc/telepathy-glib/AUTHORS
-  /usr/share/doc/telepathy-glib/COPYING
-  /usr/share/doc/telepathy-glib/ChangeLog
-  /usr/share/doc/telepathy-glib/NEWS
-  /usr/share/doc/telepathy-glib/README
-
-(libtelepathy-glib-devel)
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/gtypes.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/telepathy-enums.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/telepathy-interfaces.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-cli-channel.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-cli-connection-manager.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-cli-connection.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-cli-dbus-daemon.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-cli-generic.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-cli-media-session-handler.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-cli-media-stream-handler.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-channel.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-connection-manager.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-connection.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-generic.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-media-session-handler.h
-  /usr/include/telepathy-1.0/telepathy-glib/_gen/tp-svc-media-stream-handler.h
-  /usr/include/telepathy-1.0/telepathy-glib/base-connection-manager.h
-  /usr/include/telepathy-1.0/telepathy-glib/base-connection.h
-  /usr/include/telepathy-1.0/telepathy-glib/channel-factory-iface.h
-  /usr/include/telepathy-1.0/telepathy-glib/channel-iface.h
-  /usr/include/telepathy-1.0/telepathy-glib/channel-manager.h
-  /usr/include/telepathy-1.0/telepathy-glib/channel.h
-  /usr/include/telepathy-1.0/telepathy-glib/connection-manager.h
-  /usr/include/telepathy-1.0/telepathy-glib/connection.h
-  /usr/include/telepathy-1.0/telepathy-glib/contact.h
-  /usr/include/telepathy-1.0/telepathy-glib/contacts-mixin.h
-  /usr/include/telepathy-1.0/telepathy-glib/dbus-properties-mixin.h
-  /usr/include/telepathy-1.0/telepathy-glib/dbus.h
-  /usr/include/telepathy-1.0/telepathy-glib/debug-ansi.h
-  /usr/include/telepathy-1.0/telepathy-glib/debug.h
-  /usr/include/telepathy-1.0/telepathy-glib/defs.h
-  /usr/include/telepathy-1.0/telepathy-glib/enums.h
-  /usr/include/telepathy-1.0/telepathy-glib/errors.h
-  /usr/include/telepathy-1.0/telepathy-glib/exportable-channel.h
-  /usr/include/telepathy-1.0/telepathy-glib/group-mixin.h
-  /usr/include/telepathy-1.0/telepathy-glib/gtypes.h
-  /usr/include/telepathy-1.0/telepathy-glib/handle-repo-dynamic.h
-  /usr/include/telepathy-1.0/telepathy-glib/handle-repo-static.h
-  /usr/include/telepathy-1.0/telepathy-glib/handle-repo.h
-  /usr/include/telepathy-1.0/telepathy-glib/handle.h
-  /usr/include/telepathy-1.0/telepathy-glib/heap.h
-  /usr/include/telepathy-1.0/telepathy-glib/interfaces.h
-  /usr/include/telepathy-1.0/telepathy-glib/intset.h
-  /usr/include/telepathy-1.0/telepathy-glib/media-interfaces.h
-  /usr/include/telepathy-1.0/telepathy-glib/message-mixin.h
-  /usr/include/telepathy-1.0/telepathy-glib/presence-mixin.h
-  /usr/include/telepathy-1.0/telepathy-glib/properties-mixin.h
-  /usr/include/telepathy-1.0/telepathy-glib/proxy-subclass.h
-  /usr/include/telepathy-1.0/telepathy-glib/proxy.h
-  /usr/include/telepathy-1.0/telepathy-glib/run.h
-  /usr/include/telepathy-1.0/telepathy-glib/svc-channel.h
-  /usr/include/telepathy-1.0/telepathy-glib/svc-connection-manager.h
-  /usr/include/telepathy-1.0/telepathy-glib/svc-connection.h
-  /usr/include/telepathy-1.0/telepathy-glib/svc-generic.h
-  /usr/include/telepathy-1.0/telepathy-glib/svc-media-interfaces.h
-  /usr/include/telepathy-1.0/telepathy-glib/svc-properties-interface.h
-  /usr/include/telepathy-1.0/telepathy-glib/text-mixin.h
-  /usr/include/telepathy-1.0/telepathy-glib/util.h
-  /usr/lib/libtelepathy-glib.dll.a
-  /usr/lib/libtelepathy-glib.la
-  /usr/lib/pkgconfig/telepathy-glib.pc
-  /usr/share/gtk-doc/html/telepathy-glib/TpBaseConnection.html
-  /usr/share/gtk-doc/html/telepathy-glib/TpBaseConnectionManager.html
-  /usr/share/gtk-doc/html/telepathy-glib/TpChannelFactoryIface.html
-  /usr/share/gtk-doc/html/telepathy-glib/TpChannelIface.html
-  /usr/share/gtk-doc/html/telepathy-glib/TpChannelManager.html
-  /usr/share/gtk-doc/html/telepathy-glib/TpDynamicHandleRepo.html
-  /usr/share/gtk-doc/html/telepathy-glib/TpExportableChannel.html
-  /usr/share/gtk-doc/html/telepathy-glib/TpStaticHandleRepo.html
-  /usr/share/gtk-doc/html/telepathy-glib/ch-client.html
-  /usr/share/gtk-doc/html/telepathy-glib/ch-dbus.html
-  /usr/share/gtk-doc/html/telepathy-glib/ch-protocol.html
-  /usr/share/gtk-doc/html/telepathy-glib/ch-service-base.html
-  /usr/share/gtk-doc/html/telepathy-glib/ch-service-dbus.html
-  /usr/share/gtk-doc/html/telepathy-glib/ch-service-handles.html
-  /usr/share/gtk-doc/html/telepathy-glib/ch-utilities.html
-  /usr/share/gtk-doc/html/telepathy-glib/home.png
-  /usr/share/gtk-doc/html/telepathy-glib/index.html
-  /usr/share/gtk-doc/html/telepathy-glib/index.sgml
-  /usr/share/gtk-doc/html/telepathy-glib/left.png
-  /usr/share/gtk-doc/html/telepathy-glib/right.png
-  /usr/share/gtk-doc/html/telepathy-glib/style.css
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpContactsMixin.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpGroupMixin.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpHeap.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpIntSet.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpMessageMixin.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpPresenceMixin.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpPropertiesMixin.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-TpTextMixin.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-asv.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel-file-transfer.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel-group.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel-media.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel-roomlist.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel-text.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel-tubes.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-channel.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-aliasing.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-avatars.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-caps.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-contacts.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-manager.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-presence.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-requests.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection-simple-presence.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-connection.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-contact.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-dbus-properties-mixin.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-dbus.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-debug-ansi.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-debug.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-defs.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-enums.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-errors.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-gtypes.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-handle-repo.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-handle.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-interfaces.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-media-interfaces.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-proxy-dbus-core.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-proxy-subclass.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-proxy-tp-properties.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-proxy.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-run.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-channel-contactlist.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-channel-file-transfer.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-channel-group.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-channel-media.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-channel-roomlist.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-channel-text.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-channel-tubes.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-channel.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-connection-manager.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-connection.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-generic.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc-media-interfaces.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-svc.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib-util.html
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib.devhelp
-  /usr/share/gtk-doc/html/telepathy-glib/telepathy-glib.devhelp2
-  /usr/share/gtk-doc/html/telepathy-glib/up.png
-
-------------------
-
 Port Notes:
+
+----- version 0.8.1-1 -----
+Version bump.
 
 ----- version 0.7.32-1 -----
 Version bump.
