@@ -3,7 +3,7 @@ inherit gnome2
 DESCRIPTION="Telepathy connection manager library"
 HOMEPAGE="http://telepathy.freedesktop.org/wiki/"
 SRC_URI="http://telepathy.freedesktop.org/releases/${PN}/${P}.tar.gz"
-PATCH_URI="0.7.20-no-undefined.patch
+PATCH_URI="0.10.0-no-undefined.patch
            0.7.14-nm-C.patch"
 
 PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
