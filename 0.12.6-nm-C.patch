@@ -1,9 +1,9 @@
---- origsrc/telepathy-glib-0.7.14/telepathy-glib/Makefile.am	2008-08-24 03:42:35.193162800 -0500
-+++ src/telepathy-glib-0.7.14/telepathy-glib/Makefile.am	2008-08-24 03:48:15.567724600 -0500
-@@ -81,7 +81,7 @@
+--- origsrc/telepathy-glib-0.12.6/telepathy-glib/abi.am	2010-12-15 21:25:48.441952300 -0600
++++ src/telepathy-glib-0.12.6/telepathy-glib/abi.am	2010-12-15 21:26:18.596804900 -0600
+@@ -90,7 +90,7 @@ _gen/version-script.txt: $(ABI_LISTS) _g
  	diff -c _gen/versioned-abi.txt _gen/abi.txt
  
- _gen/abi.txt: libtelepathy-glib-internal.la Makefile.am
+ _gen/abi.txt: libtelepathy-glib-internal.la abi.am
 -	$(NM) .libs/libtelepathy-glib-internal.a > _gen/abi.nm
 +	$(NM) -C .libs/libtelepathy-glib-internal.a > _gen/abi.nm
  	grep " [DT] " < _gen/abi.nm > _gen/abi.funcs
