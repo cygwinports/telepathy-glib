@@ -3,14 +3,13 @@ inherit gnome2
 DESCRIPTION="Telepathy connection manager library"
 HOMEPAGE="http://telepathy.freedesktop.org/wiki/"
 SRC_URI="http://telepathy.freedesktop.org/releases/${PN}/${P}.tar.gz"
-PATCH_URI="0.12.6-no-undefined.patch
+PATCH_URI="0.14.5-no-undefined.patch
            0.12.6-nm-C.patch"
 
 PKG_NAMES="lib${PN}0 lib${PN}-devel girepository-TelepathyGLib0.12 vala-${PN}"
 libtelepathy_glib0_CONTENTS="usr/bin/cyg${PN}-0.dll usr/share/doc/"
 libtelepathy_glib_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
 girepository_TelepathyGLib0_12_CONTENTS="usr/*/gir*/TelepathyGLib-0.12.*"
-vala_telepathy_glib_CONTENTS="usr/share/vala-0.10/"
+vala_telepathy_glib_CONTENTS="usr/share/vala*/"
 
 CYGCONF_ARGS="--enable-vala-bindings"
-MAKEOPTS+=" vapidir=/usr/share/vala-0.10/vapi"

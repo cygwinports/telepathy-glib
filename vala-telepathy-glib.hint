@@ -1,5 +1,5 @@
 category: Gnome Net
-requires: libtelepathy-glib-devel vala
+requires: vala
 external-source: telepathy-glib
 sdesc: "Telepathy connection manager library (Vala bindings)"
 ldesc: "Glib library for Telepathy connection managers"
