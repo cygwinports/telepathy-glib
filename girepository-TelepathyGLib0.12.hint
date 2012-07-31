@@ -1,5 +1,0 @@
-category: Gnome Net
-requires: libtelepathy-glib0 girepository-TelepathyGLib0.12
-external-source: telepathy-glib
-sdesc: "Telepathy connection manager library (GObject Introspection data)"
-ldesc: "Glib library for Telepathy connection managers"

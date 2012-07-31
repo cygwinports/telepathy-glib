@@ -1,14 +1,23 @@
 inherit gnome2
 
-DESCRIPTION="Telepathy connection manager library"
+CATEGORY="Net"
+SUMMARY="Telepathy connection manager library"
+DESCRIPTION="Telepathy is a D-Bus framework for unifying real time
+communication, including instant messaging, voice calls and video calls.
+It abstracts differences between protocols to provide a unified
+interface for applications."
 HOMEPAGE="http://telepathy.freedesktop.org/wiki/"
 SRC_URI="http://telepathy.freedesktop.org/releases/${PN}/${P}.tar.gz"
 PATCH_URI="0.12.6-nm-C.patch"
 
 PKG_NAMES="lib${PN}0 lib${PN}-devel girepository-TelepathyGLib0.12 vala-${PN}"
+libtelepathy_glib0_SUMMARY="${SUMMARY} (runtime)"
 libtelepathy_glib0_CONTENTS="usr/bin/cyg${PN}-0.dll usr/share/doc/"
+libtelepathy_glib_devel_SUMMARY="${SUMMARY} (development)"
 libtelepathy_glib_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
+girepository_TelepathyGLib0_12_SUMMARY="${SUMMARY} (GObject Introspection)"
 girepository_TelepathyGLib0_12_CONTENTS="usr/*/gir*/TelepathyGLib-0.12.*"
+vala_telepathy_glib_SUMMARY="${SUMMARY} (Vala bindings)"
 vala_telepathy_glib_CONTENTS="usr/share/vala*/"
 
 CYGCONF_ARGS="--enable-vala-bindings"

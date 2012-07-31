@@ -1,5 +1,0 @@
-category: Gnome Net
-requires: libtelepathy-glib0 libdbus1-devel libdbus-glib_1-devel libglib2.0-devel
-external-source: telepathy-glib
-sdesc: "Telepathy connection manager library (development)"
-ldesc: "Glib library for Telepathy connection managers"
