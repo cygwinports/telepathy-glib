@@ -1,21 +1,21 @@
 inherit gnome2
 
 NAME="telepathy-glib"
-VERSION=0.20.1
+VERSION=0.20.4
 RELEASE=1
-CATEGORY="Net"
+CATEGORY="Libs"
 SUMMARY="Telepathy connection manager library"
 DESCRIPTION="Telepathy is a D-Bus framework for unifying real time
 communication, including instant messaging, voice calls and video calls.
 It abstracts differences between protocols to provide a unified
 interface for applications."
 HOMEPAGE="http://telepathy.freedesktop.org/wiki/"
-SRC_URI="http://telepathy.freedesktop.org/releases/${PN}/${P}.tar.gz"
+SRC_URI="http://telepathy.freedesktop.org/releases/${NAME}/${NAME}-${VERSION}.tar.gz"
 PATCH_URI="0.12.6-nm-C.patch"
 
-PKG_NAMES="lib${PN}0 lib${PN}-devel girepository-TelepathyGLib0.12 vala-${PN}"
+PKG_NAMES="lib${NAME}0 lib${NAME}-devel girepository-TelepathyGLib0.12 vala-${NAME}"
 libtelepathy_glib0_SUMMARY="${SUMMARY} (runtime)"
-libtelepathy_glib0_CONTENTS="usr/bin/cyg${PN}-0.dll usr/share/doc/"
+libtelepathy_glib0_CONTENTS="usr/bin/cyg${NAME}-0.dll usr/share/doc/"
 libtelepathy_glib_devel_SUMMARY="${SUMMARY} (development)"
 libtelepathy_glib_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
 girepository_TelepathyGLib0_12_SUMMARY="${SUMMARY} (GObject Introspection)"
