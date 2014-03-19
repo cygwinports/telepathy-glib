@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="telepathy-glib"
-VERSION=0.20.4
+VERSION=0.22.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Telepathy connection manager library"
